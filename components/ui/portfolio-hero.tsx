@@ -18,17 +18,20 @@ export function HeroScrollDemo() {
           </div>
         }
       >
-        <Image
-          src="/image/fotoyuga.jpeg"
-          alt="Showcase Portofolio"
-          height={720}
-          width={1400}
-          className="mx-auto rounded-2xl object-cover h-full w-full object-center"
-          draggable={false}
-          priority
-        />
+        {/* Container wrapper untuk mengunci aspect ratio */}
+        <div className="mx-auto h-full w-full max-w-4xl overflow-hidden rounded-2xl">
+          <Image
+            src="/image/fotoyuga.jpeg"
+            alt="Showcase Portofolio"
+            height={1000}
+            width={750}
+            // aspect-[3/4] akan memaksa foto menjadi portrait/tegak
+            className="mx-auto h-full w-full object-cover aspect-[3/4]"
+            draggable={false}
+            priority
+          />
+        </div>
       </ContainerScroll>
     </div>
   );
- 
 }

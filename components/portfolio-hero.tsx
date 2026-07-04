@@ -22,7 +22,7 @@ export function HeroScrollDemo() {
           src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1400&auto=format&fit=crop"
           alt="Showcase Portofolio"
           height={720}
-          width={1400}
+          width={1500}
           className="mx-auto rounded-2xl object-cover h-full w-full object-center"
           draggable={false}
           priority
